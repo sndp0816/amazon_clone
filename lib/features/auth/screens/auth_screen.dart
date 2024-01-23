@@ -181,6 +181,7 @@ class _AuthScreenState extends State<AuthScreen> {
                             color: GlobalVariables.secondaryColor,
                             onTap: () {
                               if (_signInformkey.currentState!.validate()) {
+                                
                                 signinuser();
                               }
                             })
