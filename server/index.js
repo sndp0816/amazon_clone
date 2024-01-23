@@ -15,10 +15,12 @@ const authRouter = require('../server/routes/auth')
 const app = express();
 
 //conneting string
-const DB = "mongodb+srv://sandeep:sandeep123@amazonuser.pxel25n.mongodb.net/?retryWrites=true&w=majority";
-
+//const DB = "mongodb+srv://sandeep:sandeep123@amazonuser.pxel25n.mongodb.net/?retryWrites=true&w=majority";
+const DB = "mongodb+srv://sandeep:sandeep123@zero.9uo6h3d.mongodb.net/?retryWrites=true&w=majority"
 //deafult port you can write to your own
-const PORT = 3000;
+//const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
 
 //Middle ware
 //Client ->middleware-> server -> Client
@@ -66,7 +68,7 @@ mongoose.connect(DB).then(()=>{
 //     // );
 // });
 
-app.listen(PORT,"0.0.0.0",()=>{
+app.listen(PORT,()=>{
     console.log(`Connected at port ${PORT} Hello`);
 });
 
