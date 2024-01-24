@@ -1,6 +1,7 @@
 import 'dart:convert';
 // import 'dart:js';
 
+import 'package:amazon_clone_app/common/widgets/bottom_bar.dart';
 import 'package:amazon_clone_app/constants/error_handling.dart';
 import 'package:amazon_clone_app/constants/global_var.dart';
 import 'package:amazon_clone_app/constants/utils.dart';
@@ -75,7 +76,7 @@ class AuthService {
                 "x-auth-token", jsonDecode(response.body)['token']);
 
             Navigator.pushNamedAndRemoveUntil(
-                context, HomeScreen.routeName, (route) => false);
+                context, BottomBar.routeName, (route) => false);
 
             showSnackBar(
               context,
