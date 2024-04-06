@@ -46,6 +46,9 @@ class _DealOfDayState extends State<DealOfDay> {
               Image.network('https://5.imimg.com/data5/SELLER/Default/2020/12/UK/GS/MC/25753287/vivo-y50-blue.jpeg',fit: BoxFit.fitWidth,width: 100,height: 100,),
               Image.network('https://5.imimg.com/data5/SELLER/Default/2020/12/UK/GS/MC/25753287/vivo-y50-blue.jpeg',fit: BoxFit.fitWidth,width: 100,height: 100,),
               Image.network('https://5.imimg.com/data5/SELLER/Default/2020/12/UK/GS/MC/25753287/vivo-y50-blue.jpeg',fit: BoxFit.fitWidth,width: 100,height: 100,),
+              Image.network('https://5.imimg.com/data5/SELLER/Default/2020/12/UK/GS/MC/25753287/vivo-y50-blue.jpeg',fit: BoxFit.fitWidth,width: 100,height: 100,),
+              Image.network('https://5.imimg.com/data5/SELLER/Default/2020/12/UK/GS/MC/25753287/vivo-y50-blue.jpeg',fit: BoxFit.fitWidth,width: 100,height: 100,),
+
             ],
           ),
         ),

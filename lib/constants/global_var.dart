@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-//add your ip address it's just an example
-String uri = 'http://192.168.1.101:3000';
+//add your ip address it's just an example. I'm using my local ip for this project
+String uri = 'http://192.168.0.126:3000';
 
 class GlobalVariables {
   // COLORS
@@ -16,7 +16,7 @@ class GlobalVariables {
   static const secondaryColor = Color.fromRGBO(255, 153, 0, 1);
   static const backgroundColor = Colors.white;
   static const Color greyBackgroundCOlor = Color(0xffebecee);
-  static var selectedNavBarColor = Colors.cyan[800]!;
+  static const Color selectedNavBarColor = Color(0xFF00838F);
   static const unselectedNavBarColor = Colors.black87;
 
   // STATIC IMAGES

@@ -5,7 +5,6 @@ import 'package:amazon_clone_app/common/widgets/bottom_bar.dart';
 import 'package:amazon_clone_app/constants/error_handling.dart';
 import 'package:amazon_clone_app/constants/global_var.dart';
 import 'package:amazon_clone_app/constants/utils.dart';
-import 'package:amazon_clone_app/features/home/screen/home_screen.dart';
 import 'package:amazon_clone_app/models/user.dart';
 import 'package:amazon_clone_app/providers/user_provider.dart';
 import 'package:flutter/material.dart';
@@ -114,7 +113,7 @@ class AuthService {
               'x-auth-token': token
             });
 
-        var userProvider = Provider.of<UserProvider>(context, listen: false);
+        var userProvider = Provider.of<UserProvider>(context , listen: false);
         userProvider.setUser(userRes.body);
       }
     } catch (e) {
