@@ -1,8 +1,12 @@
 const express = require('express');
 const adminRouter = express.Router();
 const admin = require('../Middleware/admin');
+<<<<<<< HEAD
 const { Product } = require('../models/product');
 const Order = require('../models/order');
+=======
+const Product = require('../models/product');
+>>>>>>> d7a33fe9b5ba06db376941381a2dc7db2c79c6ea
 
 
 //creating admin middleware
@@ -13,7 +17,11 @@ adminRouter.post('/admin/add-product',admin, async(req,res) => {
             name,
             description,
             quantity,
+<<<<<<< HEAD
             images,
+=======
+            image,
+>>>>>>> d7a33fe9b5ba06db376941381a2dc7db2c79c6ea
             category,
             price,
             
@@ -23,7 +31,11 @@ adminRouter.post('/admin/add-product',admin, async(req,res) => {
             name,
             description,
             quantity,
+<<<<<<< HEAD
             images,
+=======
+            image,
+>>>>>>> d7a33fe9b5ba06db376941381a2dc7db2c79c6ea
             category,
             price,
         });
@@ -38,6 +50,7 @@ adminRouter.post('/admin/add-product',admin, async(req,res) => {
     }
 });
 
+<<<<<<< HEAD
 //get all the products 
 
 adminRouter.get('/admin/get-products',admin, async(req,res) => {
@@ -136,5 +149,7 @@ adminRouter.post("/admin/change-order-status", admin, async (req, res) => {
     }
     return earnings;
   }
+=======
+>>>>>>> d7a33fe9b5ba06db376941381a2dc7db2c79c6ea
 
 module.exports = adminRouter;

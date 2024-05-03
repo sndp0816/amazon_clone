@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 import 'dart:convert';
+=======
+>>>>>>> d7a33fe9b5ba06db376941381a2dc7db2c79c6ea
 import 'dart:io';
 
 import 'package:amazon_clone_app/constants/error_handling.dart';
 import 'package:amazon_clone_app/constants/global_var.dart';
 import 'package:amazon_clone_app/constants/utils.dart';
+<<<<<<< HEAD
 import 'package:amazon_clone_app/features/admin/models/sales.dart';
 import 'package:amazon_clone_app/models/order.dart';
+=======
+>>>>>>> d7a33fe9b5ba06db376941381a2dc7db2c79c6ea
 import 'package:amazon_clone_app/models/product.dart';
 import 'package:amazon_clone_app/providers/user_provider.dart';
 import 'package:cloudinary_public/cloudinary_public.dart';
@@ -61,6 +67,7 @@ class AdminServices {
       showSnackBar(context, e.toString());
     }
   }
+<<<<<<< HEAD
 
   // get all the products
   Future<List<Product>> fetchAllProducts(BuildContext context) async {
@@ -226,4 +233,6 @@ class AdminServices {
     };
   }
   //class bracket
+=======
+>>>>>>> d7a33fe9b5ba06db376941381a2dc7db2c79c6ea
 }

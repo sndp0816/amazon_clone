@@ -7,12 +7,7 @@ const mongoose = require('mongoose');
 
 
 //Importing from other files
-const authRouter = require('./routes/auth');
-const adminRouter = require('./routes/admin');
-//const admin = require('./Middleware/admin');
-// const admin = require('./routes/admin');
-const productRouter = require('./routes/product');
-const userRouter = require('./routes/user');
+const authRouter = require('../server/routes/auth')
 
 //INIT files
 
@@ -31,11 +26,6 @@ const PORT = process.env.PORT || 3000;
 //Client ->middleware-> server -> Client
 app.use(express.json());
 app.use(authRouter);
-
-app.use(adminRouter);
-app.use(productRouter);
-app.use(userRouter);
-//app.use(admin);
 
 //connections
 mongoose.connect(DB).then(()=>{

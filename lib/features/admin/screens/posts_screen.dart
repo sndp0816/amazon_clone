@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 import 'package:amazon_clone_app/common/widgets/loader.dart';
 import 'package:amazon_clone_app/constants/global_var.dart';
 import 'package:amazon_clone_app/features/admin/screens/add_product_screen.dart';
 import 'package:amazon_clone_app/features/admin/service/admin_services.dart';
 import 'package:amazon_clone_app/features/auth/widgets/single_product.dart';
 import 'package:amazon_clone_app/models/product.dart';
+=======
+import 'package:amazon_clone_app/constants/global_var.dart';
+import 'package:amazon_clone_app/features/admin/screens/add_product_screen.dart';
+>>>>>>> d7a33fe9b5ba06db376941381a2dc7db2c79c6ea
 import 'package:flutter/material.dart';
 
 class PostScreen extends StatefulWidget {
@@ -14,6 +19,7 @@ class PostScreen extends StatefulWidget {
 }
 
 class _PostScreenState extends State<PostScreen> {
+<<<<<<< HEAD
   List<Product>? products;
   final AdminServices adminServices = AdminServices();
 
@@ -43,10 +49,16 @@ class _PostScreenState extends State<PostScreen> {
   void nevigateToAddProduct() {
     Navigator.pushNamed(context, AddProductScreen.routeName);
     
+=======
+
+  void nevigateToAddProduct() {
+    Navigator.pushNamed(context, AddProductScreen.routeName);
+>>>>>>> d7a33fe9b5ba06db376941381a2dc7db2c79c6ea
   }
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return products == null
         ? const Loader()
         : Scaffold(
@@ -100,3 +112,18 @@ class _PostScreenState extends State<PostScreen> {
           );
   }
 }
+=======
+    return Scaffold(
+      body: Center(child: Text("Products"),
+      
+      ),floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: nevigateToAddProduct,
+        tooltip: 'Add a product',
+        backgroundColor: GlobalVariables.selectedNavBarColor,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+    );
+  }
+}
+>>>>>>> d7a33fe9b5ba06db376941381a2dc7db2c79c6ea

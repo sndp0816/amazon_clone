@@ -1,6 +1,4 @@
 import 'package:amazon_clone_app/common/widgets/bottom_bar.dart';
-import 'package:amazon_clone_app/features/address/screen/address_screen.dart';
-import 'package:amazon_clone_app/features/admin/screens/add_product_screen.dart';
 import 'package:amazon_clone_app/features/auth/screens/auth_screen.dart';
 import 'package:amazon_clone_app/features/home/screen/category_deals_screen.dart';
 import 'package:amazon_clone_app/features/home/screen/home_screen.dart';
@@ -29,57 +27,6 @@ Route<dynamic> generateRoute(RouteSettings routeSetting) {
       return MaterialPageRoute(
         settings: routeSetting,
         builder: (_) => const BottomBar(),
-      );
-
-    case AddProductScreen.routeName:
-      return MaterialPageRoute(
-        settings: routeSetting,
-        builder: (_) => const AddProductScreen(),
-      );
-
-    case CategoryDealScreen.routeName:
-      var category = routeSetting.arguments as String;
-      return MaterialPageRoute(
-        settings: routeSetting,
-        builder: (_) => CategoryDealScreen(
-          categoryName: category,
-        ),
-      );
-
-    case SearchScreen.routeName:
-      var searchQuery = routeSetting.arguments as String;
-      return MaterialPageRoute(
-        settings: routeSetting,
-        builder: (_) => SearchScreen(
-          searchQuery: searchQuery,
-        ),
-      );
-
-    case ProductDetailSceen.routeName:
-      var product = routeSetting.arguments as Product;
-      return MaterialPageRoute(
-        settings: routeSetting,
-        builder: (_) => ProductDetailSceen(
-          product: product,
-        ),
-      );
-
-    case AddressScreen.routeName:
-      var totalAmount = routeSetting.arguments as String;
-      return MaterialPageRoute(
-        settings: routeSetting,
-        builder: (_) => AddressScreen(
-          totalAmount: totalAmount,
-        ),
-      );
-
-    case OrderDetailScreen.routeName:
-      var order = routeSetting.arguments as Order;
-      return MaterialPageRoute(
-        settings: routeSetting,
-        builder: (_) => OrderDetailScreen(
-          order: order,
-        ),
       );
 
     default:
